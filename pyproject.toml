@@ -1,0 +1,41 @@
+[project]
+name = "complienceqapipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "supriyagadre118", email = "gsupriya11@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "azure-identity>=1.27.0",
+    "azure-monitor-opentelemetry>=1.8.12",
+    "azure-search-documents>=12.1.0",
+    "azure-storage-blob>=12.31.1",
+    "fastapi>=0.163.2",
+    "firecrawl-py>=4.57.0",
+    "langchain>=1.5.0",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.8.1",
+    "langgraph>=1.2.22",
+    "langsmith>=0.15.0",
+    "opentelemetry-instrumentation-fastapi>=0.66b2",
+    "pandas>=3.1.1",
+    "psycopg2-binary>=2.9.13",
+    "pydantic>=2.14.3",
+    "pypdf>=7.1.0",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.1.9",
+    "streamlit>=1.67.0",
+    "uvicorn>=0.54.0",
+    "yt-dlp>=2026.10.26",
+]
+
+[project.scripts]
+complienceqapipeline = "complienceqapipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
